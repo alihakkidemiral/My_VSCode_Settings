@@ -1,111 +1,123 @@
 {
-  "better-comments.tags": [
-    {
-      "tag": "!",
-      "color": "#E93D58",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "?",
-      "color": "#3DAEE9",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "//",
-      "color": "#3DAEE9",
-      "strikethrough": true,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "*",
-      "color": "#00D3B8",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    }
-  ],
+  "workbench.iconTheme": "material-icon-theme",
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^)((\\s+(!|\\?|\\*|\\-))?(\\s+\\[(\\S|\\s)\\])?|(\\s+(!|\\?|\\*|\\-)\\s+\\[.\\])?)\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
   "todo-tree.highlights.enabled": true,
   "todo-tree.general.tags": [
-    "TODO", "Todo", "todo",
-    "BUG", "Bug", "bug",
-    "FIX", "Fix", "fix",
-    "FIXME", "FixMe", "Fixme", "fixme",
-    "MARK", "Mark", "mark",
-    "CHECK", "Check", "check",
-    "DONE", "Done", "done"
+  "TODO", "Todo", "todo",
+  "BUG", "Bug", "bug",
+  "FIX", "Fix", "fix",
+  "FIXME", "FixMe", "Fixme", "fixme",
+  "MARK", "Mark", "mark",
+  "CHECK", "Check", "check",
+  "DONE", "Done", "done"
   ],
   "todo-tree.general.tagGroups": {
-    "Todo": [
+  "Todo": [
       "TODO", "Todo", "todo"
-    ],
-    "Bug": [
+  ],
+  "Bug": [
       "BUG", "Bug", "bug",
       "FIX", "Fix", "fix",
       "FIXME", "FixMe", "Fixme", "fixme"
-    ],
-    "Mark": [
+  ],
+  "Mark": [
       "MARK", "Mark", "mark"
-    ],
-    "Check": [
+  ],
+  "Check": [
       "CHECK", "Check", "check"
-    ],
-    "Done": [
+  ],
+  "Done": [
       "DONE", "Done", "done"
-    ]
+  ]
   },
   "todo-tree.highlights.defaultHighlight": {
-    "type": "text-and-comment"
+  "type": "text-and-comment"
   },
   "todo-tree.highlights.customHighlight": {
-    "Todo": {
+  "Todo": {
       "foreground": "#E9643A",
       "icon": "checklist",
       "iconColour": "#E9643A"
-    },
-    "Bug": {
+  },
+  "Bug": {
       "foreground": "#E93D58",
       "icon": "bug",
       "iconColour": "#E93D58"
-    },
-    "Mark": {
+  },
+  "Mark": {
       "foreground": "#3DAEE9",
       "icon": "bookmark",
       "iconColour": "#3DAEE9"
-    },
-    "Check": {
+  },
+  "Check": {
       "foreground": "#926EE4",
       "icon": "bookmark",
       "iconColour": "#926EE4"
-    },
-    "Done": {
+  },
+  "Done": {
       "foreground": "#3DD425",
       "icon": "bookmark",
       "iconColour": "#3DD425"
-    }
+  }
   },
   "todo-tree.tree.labelFormat": "${tag:uppercase} \t ${after} \t [${filename}]",
   "todo-tree.tree.tooltipFormat": "${filename}:[${line}] in ${filepath}",
-  "code-runner.executorMap": {
-    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && konsole -e './$fileNameWithoutExt ; read line'",
-    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && konsole -e './$fileNameWithoutExt ; read line'",
-    "csharp": "cd $dir && konsole -e 'dotnet run'"
+  "better-comments.tags": [
+      {
+        "tag": "!",
+        "color": "#E93D58",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "?",
+        "color": "#3DAEE9",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "//",
+        "color": "#3DAEE9",
+        "strikethrough": true,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "*",
+        "color": "#00D3B8",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "code-runner.executorMap": {
+      "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && konsole -e './$fileNameWithoutExt ; read line'",
+      "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && konsole -e './$fileNameWithoutExt ; read line'",
+      "csharp": "cd $dir && konsole -e 'dotnet run'"
   },
   "code-runner.runInTerminal": true,
+  "workbench.colorTheme": "GitHub Dark",
   "terminal.external.linuxExec": "konsole",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "GitHub Dark"
+  "terminal.explorerKind": "external",
+  "csharp.debug.console": "externalTerminal"
 }
+
+// Red          #E83D58
+// Orange       #E9643A
+// Yellow       #E8CB2D
+// Green        #3DD425
+// Light Blue   #00D3B8
+// Blue         #3DAEE9
+// Light Purple #B875DC
+// Purple       #926EE4
+// Grey         #686B6F
